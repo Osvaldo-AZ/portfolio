@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+:root {
+  --font-inter: var(--font-inter);
+  --font-monospace: var(--font-ibm-plex-mono);
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+heading, .font-monospace {
+  font-family: var(--font-monospace), monospace;
+}
