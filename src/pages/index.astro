@@ -1,11 +1,36 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import LinkedInIcon from '../components/LinkedInIcon.astro';
+import EnvelopeIcon from '../components/EnvelopeIcon.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Osvaldo Rivera | Under Construction">
+	<main
+		class="flex min-h-screen flex-col items-center justify-center bg-olive-200 p-4 text-zinc-950 font-inter"
+	>
+		<div class="text-center">
+			<h1 class="font-monospace text-5xl font-bold text-zinc-900">Welcome! I'm Osvaldo</h1>
+			<p class="mt-4 text-xl text-zinc-600">Software Engineer</p>
+			<p class="mt-8 rounded-lg bg-olive-100 p-4 text-lg">
+				My site is currently under construction.
+			</p>
+
+			<div class="mt-6 flex justify-center gap-4">
+				<a
+					href="https://linkedin.com/in/Osvaldo-Rivera-AZ"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="View my LinkedIn profile"
+					class="rounded-md bg-sky-600 p-2.5 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+					><LinkedInIcon /></a>
+				
+				<a
+					href="mailto:youremail@example.com"
+					aria-label="Contact me by email"
+					class="rounded-md bg-slate-700 p-2.5 text-white shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600"
+					><EnvelopeIcon /></a
+				>
+			</div>
+		</div>
+	</main>
 </Layout>
